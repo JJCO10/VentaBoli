@@ -8,3 +8,11 @@ C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.csproj.GenerateR
 C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.csproj.CoreCompileInputs.cache
 C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.exe
 C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.pdb
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\bin\Debug\BLL.dll
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\bin\Debug\Entity.dll
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\bin\Debug\DAL.dll
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\bin\Debug\BLL.pdb
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\bin\Debug\Entity.pdb
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\bin\Debug\DAL.pdb
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.frmVentas.resources
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.csproj.Up2Date

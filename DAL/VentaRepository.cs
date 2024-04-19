@@ -22,7 +22,7 @@ namespace DAL
                 return "datos incorrectos de la venta";
             }
 
-            SqlCommand cmd = new SqlCommand("SP_INSERTAR_VENTA", conexion);
+            SqlCommand cmd = new SqlCommand("SP_AGREGAR_VENTA", conexion);
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@id_venta", venta.idVenta);
             cmd.Parameters.AddWithValue("@tipoProducto", venta.tipoProducto);
@@ -90,7 +90,7 @@ namespace DAL
         public List<Venta> ConsultarVenta()
         {
             List<Venta> list = new List<Venta>();
-            string ssql = "select * from ventas";
+            string ssql = "select * from Ventas";
 
             SqlCommand cmd = new SqlCommand(ssql, conexion);
             AbrirConexion();

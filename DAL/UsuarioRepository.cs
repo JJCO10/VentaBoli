@@ -35,8 +35,8 @@ namespace DAL
         {
             Usuario usuario = new Usuario();
 
-            usuario.Usuarios = Convert.ToString(reader["Vendedor"]);
-            usuario.Contraseña = Convert.ToString(reader["Clave"]);
+            usuario.Usuarios = Convert.ToString(reader["Usuario"]);
+            usuario.Contraseña = Convert.ToString(reader["Contraseña"]);
 
             return usuario;
         }
