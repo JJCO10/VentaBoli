@@ -113,6 +113,7 @@
             this.btnIniciarsesion.TabIndex = 5;
             this.btnIniciarsesion.Text = "Iniciar Sesion";
             this.btnIniciarsesion.UseVisualStyleBackColor = false;
+            this.btnIniciarsesion.Click += new System.EventHandler(this.btnIniciarsesion_Click);
             // 
             // frmLogin
             // 
