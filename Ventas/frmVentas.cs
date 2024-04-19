@@ -65,7 +65,23 @@ namespace Ventas
 
         private void btnEliminarVenta_Click(object sender, EventArgs e)
         {
-
+            if (txtCodigoVenta.Text == "" || cboxTipoProducto.Text == "" || txtCantidadProducto.Text == "" || txtTotalVenta.Text == "")
+            {
+                Venta venta = new Venta
+                {
+                    idVenta = txtCodigoVenta.Text,
+                    tipoProducto = cboxTipoProducto.Text,
+                    cantidadProducto = Convert.ToInt32(txtCantidadProducto.Text),
+                    Total = Convert.ToInt32(txtTotalVenta.Text),
+                    fechaVenta = Convert.ToString(dtpFechaVenta.Value.ToString("d"))
+                };
+                EliminarBD(venta);
+                cargarGrillaVentas(ventaService.ConsultarVenta());
+            }
+            else
+            {
+                MessageBox.Show("Faltan datos por ingresar!", "Gestion de producto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
         private void InsertarVenta(Venta venta)
         {
@@ -122,6 +138,11 @@ namespace Ventas
         private void ModificarBD(Venta venta)
         {
             var msg = ventaService.ModificarVenta(venta);
+            MessageBox.Show(msg);
+        }
+        void EliminarBD(Venta venta)
+        {
+            var msg = ventaService.EliminarVenta(venta);
             MessageBox.Show(msg);
         }
     }
