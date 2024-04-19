@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FB6797E-431F-48A8-B790-ED6092876954}|Ventas\\Ventas.csproj|c:\\users\\jjco10\\documents\\devops\\ventas\\ventas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3FB6797E-431F-48A8-B790-ED6092876954}|Ventas\\Ventas.csproj|solutionrelative:ventas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B3DF628B-248E-4188-A510-A1D95C6DE0F1}|BLL\\BLL.csproj|c:\\users\\jjco10\\documents\\devops\\ventas\\bll\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3DF628B-248E-4188-A510-A1D95C6DE0F1}|BLL\\BLL.csproj|solutionrelative:bll\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77A935EB-38A4-42B1-A2E3-F74C7DA7493E}|DAL\\DAL.csproj|c:\\users\\jjco10\\documents\\devops\\ventas\\dal\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A935EB-38A4-42B1-A2E3-F74C7DA7493E}|DAL\\DAL.csproj|solutionrelative:dal\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A101388E-9725-408F-80C0-F4E44EE6D400}|Entity\\Entity.csproj|c:\\users\\jjco10\\documents\\devops\\ventas\\entity\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A101388E-9725-408F-80C0-F4E44EE6D400}|Entity\\Entity.csproj|solutionrelative:entity\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DF628B-248E-4188-A510-A1D95C6DE0F1}|BLL\\BLL.csproj|c:\\users\\jjco10\\documents\\devops\\ventas\\bll\\ventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3DF628B-248E-4188-A510-A1D95C6DE0F1}|BLL\\BLL.csproj|solutionrelative:bll\\ventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77A935EB-38A4-42B1-A2E3-F74C7DA7493E}|DAL\\DAL.csproj|c:\\users\\jjco10\\documents\\devops\\ventas\\dal\\ventarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A935EB-38A4-42B1-A2E3-F74C7DA7493E}|DAL\\DAL.csproj|solutionrelative:dal\\ventarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A101388E-9725-408F-80C0-F4E44EE6D400}|Entity\\Entity.csproj|c:\\users\\jjco10\\documents\\devops\\ventas\\entity\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A101388E-9725-408F-80C0-F4E44EE6D400}|Entity\\Entity.csproj|solutionrelative:entity\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB6797E-431F-48A8-B790-ED6092876954}|Ventas\\Ventas.csproj|c:\\users\\jjco10\\documents\\devops\\ventas\\ventas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB6797E-431F-48A8-B790-ED6092876954}|Ventas\\Ventas.csproj|solutionrelative:ventas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB6797E-431F-48A8-B790-ED6092876954}|Ventas\\Ventas.csproj|c:\\users\\jjco10\\documents\\devops\\ventas\\ventas\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3FB6797E-431F-48A8-B790-ED6092876954}|Ventas\\Ventas.csproj|solutionrelative:ventas\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +42,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\Ventas\\Program.cs",
+              "RelativeDocumentMoniker": "Ventas\\Program.cs",
+              "ToolTip": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\Ventas\\Program.cs",
+              "RelativeToolTip": "Ventas\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T14:02:00.877Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
@@ -39,11 +80,89 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\Ventas\\Form1.cs",
-              "RelativeDocumentMoniker": "Ventas\\Form1.cs",
-              "ToolTip": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\Ventas\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Ventas\\Form1.cs [Dise\u00F1o]",
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\BLL\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "BLL\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\BLL\\UsuarioService.cs",
+              "RelativeToolTip": "BLL\\UsuarioService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T14:08:15.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\DAL\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\DAL\\UsuarioRepository.cs",
+              "RelativeToolTip": "DAL\\UsuarioRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T14:07:43.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\Entity\\Usuario.cs",
+              "RelativeDocumentMoniker": "Entity\\Usuario.cs",
+              "ToolTip": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\Entity\\Usuario.cs",
+              "RelativeToolTip": "Entity\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T14:07:23.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VentaService.cs",
+              "DocumentMoniker": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\BLL\\VentaService.cs",
+              "RelativeDocumentMoniker": "BLL\\VentaService.cs",
+              "ToolTip": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\BLL\\VentaService.cs",
+              "RelativeToolTip": "BLL\\VentaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T14:06:45.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VentaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\DAL\\VentaRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\VentaRepository.cs",
+              "ToolTip": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\DAL\\VentaRepository.cs",
+              "RelativeToolTip": "DAL\\VentaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T14:06:13.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ventas.cs",
+              "DocumentMoniker": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\Entity\\Ventas.cs",
+              "RelativeDocumentMoniker": "Entity\\Ventas.cs",
+              "ToolTip": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\Entity\\Ventas.cs",
+              "RelativeToolTip": "Entity\\Ventas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T14:05:25.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\Ventas\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Ventas\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\JJCO10\\Documents\\Devops\\Ventas\\Ventas\\frmLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Ventas\\frmLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T13:57:44.126Z",
               "EditorCaption": " [Dise\u00F1o]"
