@@ -12,34 +12,35 @@ namespace BLL
     {
         VentaRepository repository = new VentaRepository();
 
-        public string RegistrarVenta(Ventas venta)
+        public string RegistrarVenta(Venta venta)
         {
             var msg = repository.RegistrarVenta(venta);
             return msg;
         }
 
-        public string ModificarVenta(Ventas Venta)
+        public string ModificarVenta(Venta Venta)
         {
             return repository.ModifcarVenta(Venta);
         }
 
-        public string EliminarVenta(Ventas venta)
+        public string EliminarVenta(Venta venta)
         {
             return repository.EliminarVenta(venta);
         }
 
-        public List<Ventas> ConsultarVenta()
+        public List<Venta> ConsultarVenta()
         {
             var msg = repository.ConsultarVenta();
             return msg;
         }
 
-        public List<Ventas> BuscarFiltradoVenta(string x)
+        public List<Venta> BuscarFiltradoVenta(string x)
         {
             return ConsultarVenta().Where(
                 item => item.idVenta == x ||
                 item.tipoProducto.Contains(x) ||
                 item.fechaVenta.Contains(x)).ToList();
         }
+
     }
 }

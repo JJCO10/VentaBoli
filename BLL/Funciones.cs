@@ -10,9 +10,9 @@ namespace BLL
 {
     public interface Funciones
     {
-        string RegistrarVenta(Ventas venta);
-        string ModificarVenta(Ventas Venta);
-        string EliminarVenta(Ventas venta);
-        List<Ventas> ConsultarVenta();
+        string RegistrarVenta(Venta venta);
+        string ModificarVenta(Venta Venta);
+        string EliminarVenta(Venta venta);
+        List<Venta> ConsultarVenta();
     }
 }

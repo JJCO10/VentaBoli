@@ -15,7 +15,7 @@ namespace DAL
 
         }
 
-        public string RegistrarVenta(Ventas venta)
+        public string RegistrarVenta(Venta venta)
         {
             if (venta == null)
             {
@@ -42,7 +42,7 @@ namespace DAL
 
         }
 
-        public string ModifcarVenta(Ventas venta)
+        public string ModifcarVenta(Venta venta)
         {
 
             SqlCommand cmd = new SqlCommand("SP_MODIFICAR_VENTA", conexion);
@@ -64,7 +64,7 @@ namespace DAL
             return "datos invalidos de la venta";
 
         }
-        public string EliminarVenta(Ventas venta)
+        public string EliminarVenta(Venta venta)
         {
 
             SqlCommand cmd = new SqlCommand("SP_ELIMINAR_VENTA", conexion);
@@ -87,9 +87,9 @@ namespace DAL
 
         }
 
-        public List<Ventas> ConsultarVenta()
+        public List<Venta> ConsultarVenta()
         {
-            List<Ventas> list = new List<Ventas>();
+            List<Venta> list = new List<Venta>();
             string ssql = "select * from ventas";
 
             SqlCommand cmd = new SqlCommand(ssql, conexion);
@@ -106,9 +106,9 @@ namespace DAL
             return list;
         }
 
-        private Ventas Mapeo(SqlDataReader reader)
+        private Venta Mapeo(SqlDataReader reader)
         {
-            Ventas venta = new Ventas
+            Venta venta = new Venta
             {
                 idVenta = Convert.ToString(reader["id_venta"]),
                 tipoProducto = Convert.ToString(reader["tipoProducto"]),
