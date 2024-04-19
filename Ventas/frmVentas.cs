@@ -76,7 +76,31 @@ namespace Ventas
 
         private void dgvVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            int index = e.RowIndex;
+            if (index >= 0)
+            {
+                txtCodigoVenta.Text = dgvVentas.Rows[index].Cells["dgvIdVenta"].Value.ToString();
+                cboxTipoProducto.Text = dgvVentas.Rows[index].Cells["dgvtipoProducto"].Value.ToString();
+                txtCantidadProducto.Text = dgvVentas.Rows[index].Cells["dgvcantidadProducto"].Value.ToString();
+                txtTotalVenta.Text = dgvVentas.Rows[index].Cells["dgvTotal"].Value.ToString();
+                dtpFechaVenta.Text = dgvVentas.Rows[index].Cells["dgvfechaVenta"].Value.ToString();
+            }
+        }
 
+        private void frmVentas_Load(object sender, EventArgs e)
+        {
+            cargarGrillaVentas(ventaService.ConsultarVenta());
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            CargarVentasFiltro();
+        }
+        private void CargarVentasFiltro()
+        {
+            var filtro = txtBuscar.Text;
+            var list = ventaService.BuscarFiltradoVenta(filtro);
+            cargarGrillaVentas(list);
         }
     }
 }

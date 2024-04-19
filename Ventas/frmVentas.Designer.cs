@@ -124,6 +124,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(131, 20);
             this.txtBuscar.TabIndex = 12;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // label6
             // 
@@ -276,6 +277,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmVentas";
             this.Text = "Ventas";
+            this.Load += new System.EventHandler(this.frmVentas_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();
