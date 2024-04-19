@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    internal class Usuario
+    public class Usuario
     {
+        public string Usuarios { get; set; }
+        public string Contraseña { get; set; }
+
+        public Usuario(){
+
+        }
+
+        public Usuario(string usuarios, string contraseña)
+        {
+            Usuarios = usuarios;
+            Contraseña = contraseña;
+        }
     }
 }
