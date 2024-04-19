@@ -16,5 +16,15 @@ namespace Ventas
         {
             InitializeComponent();
         }
+
+        private void labelUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelContraseña_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

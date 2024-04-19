@@ -1,0 +1,6 @@
+C:\Users\JJCO10\Documents\Devops\Ventas\Entity\bin\Debug\Entity.dll
+C:\Users\JJCO10\Documents\Devops\Ventas\Entity\bin\Debug\Entity.pdb
+C:\Users\JJCO10\Documents\Devops\Ventas\Entity\obj\Debug\Entity.csproj.AssemblyReference.cache
+C:\Users\JJCO10\Documents\Devops\Ventas\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Users\JJCO10\Documents\Devops\Ventas\Entity\obj\Debug\Entity.dll
+C:\Users\JJCO10\Documents\Devops\Ventas\Entity\obj\Debug\Entity.pdb

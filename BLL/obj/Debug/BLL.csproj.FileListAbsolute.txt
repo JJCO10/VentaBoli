@@ -1,0 +1,11 @@
+C:\Users\JJCO10\Documents\Devops\Ventas\BLL\bin\Debug\BLL.dll
+C:\Users\JJCO10\Documents\Devops\Ventas\BLL\bin\Debug\BLL.pdb
+C:\Users\JJCO10\Documents\Devops\Ventas\BLL\bin\Debug\DAL.dll
+C:\Users\JJCO10\Documents\Devops\Ventas\BLL\bin\Debug\Entity.dll
+C:\Users\JJCO10\Documents\Devops\Ventas\BLL\bin\Debug\DAL.pdb
+C:\Users\JJCO10\Documents\Devops\Ventas\BLL\bin\Debug\Entity.pdb
+C:\Users\JJCO10\Documents\Devops\Ventas\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\JJCO10\Documents\Devops\Ventas\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\JJCO10\Documents\Devops\Ventas\BLL\obj\Debug\BLL.csproj.Up2Date
+C:\Users\JJCO10\Documents\Devops\Ventas\BLL\obj\Debug\BLL.dll
+C:\Users\JJCO10\Documents\Devops\Ventas\BLL\obj\Debug\BLL.pdb

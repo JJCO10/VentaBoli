@@ -1,0 +1,10 @@
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\bin\Debug\Ventas.exe.config
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\bin\Debug\Ventas.exe
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\bin\Debug\Ventas.pdb
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.csproj.AssemblyReference.cache
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.frmLogin.resources
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.Properties.Resources.resources
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.csproj.GenerateResource.cache
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.csproj.CoreCompileInputs.cache
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.exe
+C:\Users\JJCO10\Documents\Devops\Ventas\Ventas\obj\Debug\Ventas.pdb

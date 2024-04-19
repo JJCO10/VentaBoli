@@ -1,0 +1,9 @@
+C:\Users\JJCO10\Documents\Devops\Ventas\DAL\bin\Debug\DAL.dll
+C:\Users\JJCO10\Documents\Devops\Ventas\DAL\bin\Debug\DAL.pdb
+C:\Users\JJCO10\Documents\Devops\Ventas\DAL\bin\Debug\Entity.dll
+C:\Users\JJCO10\Documents\Devops\Ventas\DAL\bin\Debug\Entity.pdb
+C:\Users\JJCO10\Documents\Devops\Ventas\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\JJCO10\Documents\Devops\Ventas\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\JJCO10\Documents\Devops\Ventas\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\JJCO10\Documents\Devops\Ventas\DAL\obj\Debug\DAL.dll
+C:\Users\JJCO10\Documents\Devops\Ventas\DAL\obj\Debug\DAL.pdb
