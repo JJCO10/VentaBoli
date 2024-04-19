@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelUsuario = new System.Windows.Forms.Label();
             this.labelContraseña = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.btnIniciarsesion = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,16 +53,6 @@
             this.groupBox1.Size = new System.Drawing.Size(579, 376);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Ventas.Properties.Resources.perfil;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(297, 300);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // labelUsuario
             // 
@@ -99,6 +89,7 @@
             // 
             this.txtContraseña.Location = new System.Drawing.Point(355, 206);
             this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(181, 20);
             this.txtContraseña.TabIndex = 4;
             // 
@@ -114,6 +105,16 @@
             this.btnIniciarsesion.Text = "Iniciar Sesion";
             this.btnIniciarsesion.UseVisualStyleBackColor = false;
             this.btnIniciarsesion.Click += new System.EventHandler(this.btnIniciarsesion_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Ventas.Properties.Resources.perfil;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(297, 300);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // frmLogin
             // 
