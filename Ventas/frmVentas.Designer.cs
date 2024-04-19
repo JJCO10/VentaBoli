@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpFechaVenta = new System.Windows.Forms.DateTimePicker();
+            this.cboxTipoProducto = new System.Windows.Forms.ComboBox();
             this.btnEliminarVenta = new System.Windows.Forms.Button();
             this.btnModificarVenta = new System.Windows.Forms.Button();
             this.btnAgregarVenta = new System.Windows.Forms.Button();
@@ -43,10 +45,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvVentas = new System.Windows.Forms.DataGridView();
-            this.cboxTipoProducto = new System.Windows.Forms.ComboBox();
-            this.dtpFechaVenta = new System.Windows.Forms.DateTimePicker();
-            this.dgbIdVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvtpioProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvIdVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvtipoProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvcantidadProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvfechaVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,6 +78,30 @@
             this.groupBox1.Size = new System.Drawing.Size(812, 472);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // dtpFechaVenta
+            // 
+            this.dtpFechaVenta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaVenta.Location = new System.Drawing.Point(36, 157);
+            this.dtpFechaVenta.Name = "dtpFechaVenta";
+            this.dtpFechaVenta.Size = new System.Drawing.Size(131, 20);
+            this.dtpFechaVenta.TabIndex = 17;
+            // 
+            // cboxTipoProducto
+            // 
+            this.cboxTipoProducto.FormattingEnabled = true;
+            this.cboxTipoProducto.Items.AddRange(new object[] {
+            "",
+            "Corozo",
+            "Tamarindo",
+            "Guayaba Agria",
+            "Piña",
+            "Mora",
+            "Lulo"});
+            this.cboxTipoProducto.Location = new System.Drawing.Point(36, 232);
+            this.cboxTipoProducto.Name = "cboxTipoProducto";
+            this.cboxTipoProducto.Size = new System.Drawing.Size(131, 21);
+            this.cboxTipoProducto.TabIndex = 16;
             // 
             // btnEliminarVenta
             // 
@@ -217,8 +241,8 @@
             // 
             this.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgbIdVenta,
-            this.dgvtpioProducto,
+            this.dgvIdVenta,
+            this.dgvtipoProducto,
             this.dgvcantidadProducto,
             this.dgvTotal,
             this.dgvfechaVenta});
@@ -228,39 +252,15 @@
             this.dgvVentas.TabIndex = 0;
             this.dgvVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVentas_CellContentClick);
             // 
-            // cboxTipoProducto
+            // dgvIdVenta
             // 
-            this.cboxTipoProducto.FormattingEnabled = true;
-            this.cboxTipoProducto.Items.AddRange(new object[] {
-            "",
-            "Corozo",
-            "Tamarindo",
-            "Guayaba Agria",
-            "Piña",
-            "Mora",
-            "Lulo"});
-            this.cboxTipoProducto.Location = new System.Drawing.Point(36, 232);
-            this.cboxTipoProducto.Name = "cboxTipoProducto";
-            this.cboxTipoProducto.Size = new System.Drawing.Size(131, 21);
-            this.cboxTipoProducto.TabIndex = 16;
+            this.dgvIdVenta.HeaderText = "ID";
+            this.dgvIdVenta.Name = "dgvIdVenta";
             // 
-            // dtpFechaVenta
+            // dgvtipoProducto
             // 
-            this.dtpFechaVenta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaVenta.Location = new System.Drawing.Point(36, 157);
-            this.dtpFechaVenta.Name = "dtpFechaVenta";
-            this.dtpFechaVenta.Size = new System.Drawing.Size(131, 20);
-            this.dtpFechaVenta.TabIndex = 17;
-            // 
-            // dgbIdVenta
-            // 
-            this.dgbIdVenta.HeaderText = "ID";
-            this.dgbIdVenta.Name = "dgbIdVenta";
-            // 
-            // dgvtpioProducto
-            // 
-            this.dgvtpioProducto.HeaderText = "Producto";
-            this.dgvtpioProducto.Name = "dgvtpioProducto";
+            this.dgvtipoProducto.HeaderText = "Producto";
+            this.dgvtipoProducto.Name = "dgvtipoProducto";
             // 
             // dgvcantidadProducto
             // 
@@ -312,8 +312,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cboxTipoProducto;
         private System.Windows.Forms.DateTimePicker dtpFechaVenta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgbIdVenta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvtpioProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvIdVenta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvtipoProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvcantidadProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvfechaVenta;

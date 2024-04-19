@@ -43,7 +43,7 @@ namespace Ventas
 
         private void btnModificarVenta_Click(object sender, EventArgs e)
         {
-            if (txtCodigoVenta.Text == "" || cboxTipoProducto.Text == "" || txtCantidadProducto.Text == "" || txtTotalVenta.Text == "")
+            if (txtCodigoVenta.Text != "" || cboxTipoProducto.Text != "" || txtCantidadProducto.Text != "" || txtTotalVenta.Text != "")
             {
                 Venta venta = new Venta
                 {
@@ -65,7 +65,7 @@ namespace Ventas
 
         private void btnEliminarVenta_Click(object sender, EventArgs e)
         {
-            if (txtCodigoVenta.Text == "" || cboxTipoProducto.Text == "" || txtCantidadProducto.Text == "" || txtTotalVenta.Text == "")
+            if (txtCodigoVenta.Text != "" || cboxTipoProducto.Text != "" || txtCantidadProducto.Text != "" || txtTotalVenta.Text != "")
             {
                 Venta venta = new Venta
                 {
