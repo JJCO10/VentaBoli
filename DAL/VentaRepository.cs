@@ -1,12 +1,122 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entity;
 
 namespace DAL
 {
-    internal class VentaRepository
+    public class VentaRepository : BaseDatos
     {
+        public VentaRepository() : base()
+        {
+
+        }
+
+        public string RegistrarVenta(Ventas venta)
+        {
+            if (venta == null)
+            {
+                return "datos incorrectos de la venta";
+            }
+
+            SqlCommand cmd = new SqlCommand("SP_INSERTAR_VENTA", conexion);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id_venta", venta.idVenta);
+            cmd.Parameters.AddWithValue("@tipoProducto", venta.tipoProducto);
+            cmd.Parameters.AddWithValue("@Total", venta.Total);
+            cmd.Parameters.AddWithValue("@cantidadProducto", venta.cantidadProducto);
+            cmd.Parameters.AddWithValue("@fechaVenta", venta.fechaVenta);
+            AbrirConexion();
+            var i = cmd.ExecuteNonQuery();
+            CerrarConexion();
+
+            if (i >= 0)
+            {
+                return $"se registro la venta exitosamente";
+            }
+
+            return "datos invalidos de la venta";
+
+        }
+
+        public string ModifcarVenta(Ventas venta)
+        {
+
+            SqlCommand cmd = new SqlCommand("SP_MODIFICAR_VENTA", conexion);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id_venta", venta.idVenta);
+            cmd.Parameters.AddWithValue("@tipoProducto", venta.tipoProducto);
+            cmd.Parameters.AddWithValue("@Total", venta.Total);
+            cmd.Parameters.AddWithValue("@cantidadProducto", venta.cantidadProducto);
+            cmd.Parameters.AddWithValue("@fechaVenta", venta.fechaVenta);
+            AbrirConexion();
+            var i = cmd.ExecuteNonQuery();
+            CerrarConexion();
+
+            if (i >= 0)
+            {
+                return $"se actualizo la venta exitosamente";
+            }
+
+            return "datos invalidos de la venta";
+
+        }
+        public string EliminarVenta(Ventas venta)
+        {
+
+            SqlCommand cmd = new SqlCommand("SP_ELIMINAR_VENTA", conexion);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id_venta", venta.idVenta);
+            cmd.Parameters.AddWithValue("@tipoProducto", venta.tipoProducto);
+            cmd.Parameters.AddWithValue("@Total", venta.Total);
+            cmd.Parameters.AddWithValue("@cantidadProducto", venta.cantidadProducto);
+            cmd.Parameters.AddWithValue("@fechaVenta", venta.fechaVenta);
+            AbrirConexion();
+            var i = cmd.ExecuteNonQuery();
+            CerrarConexion();
+
+            if (i >= 0)
+            {
+                return $"se actualizo la venta exitosamente";
+            }
+
+            return "datos invalidos de la venta";
+
+        }
+
+        public List<Ventas> ConsultarVenta()
+        {
+            List<Ventas> list = new List<Ventas>();
+            string ssql = "select * from ventas";
+
+            SqlCommand cmd = new SqlCommand(ssql, conexion);
+            AbrirConexion();
+            SqlDataReader rdr = cmd.ExecuteReader();
+
+            while (rdr.Read())
+            {
+                list.Add(Mapeo(rdr));
+            }
+            rdr.Close();
+            CerrarConexion();
+
+            return list;
+        }
+
+        private Ventas Mapeo(SqlDataReader reader)
+        {
+            Ventas venta = new Ventas
+            {
+                idVenta = Convert.ToString(reader["id_venta"]),
+                tipoProducto = Convert.ToString(reader["tipoProducto"]),
+                Total = Convert.ToDouble(reader["Total"]),
+                cantidadProducto = Convert.ToInt32(reader["cantidadProducto"]),
+                fechaVenta = Convert.ToString(reader["fechaVenta"]),
+            };
+            return venta;
+        }
     }
 }
