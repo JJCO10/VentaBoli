@@ -231,6 +231,14 @@
             // cboxTipoProducto
             // 
             this.cboxTipoProducto.FormattingEnabled = true;
+            this.cboxTipoProducto.Items.AddRange(new object[] {
+            "",
+            "Corozo",
+            "Tamarindo",
+            "Guayaba Agria",
+            "Piña",
+            "Mora",
+            "Lulo"});
             this.cboxTipoProducto.Location = new System.Drawing.Point(36, 232);
             this.cboxTipoProducto.Name = "cboxTipoProducto";
             this.cboxTipoProducto.Size = new System.Drawing.Size(131, 21);

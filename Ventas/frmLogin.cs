@@ -31,7 +31,7 @@ namespace Ventas
 
         private void btnIniciarsesion_Click(object sender, EventArgs e)
         {
-
+            Ingresar();
         }
         public void Ingresar()
         {
