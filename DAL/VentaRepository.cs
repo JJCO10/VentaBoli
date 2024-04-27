@@ -17,28 +17,40 @@ namespace DAL
 
         public string RegistrarVenta(Venta venta)
         {
-            if (venta == null)
+            try
             {
-                return "datos incorrectos de la venta";
+                if (venta == null)
+                {
+                    return "datos incorrectos de la venta";
+                }
+                AbrirConexion();
+                SqlCommand cmd = new SqlCommand("SP_AGREGAR_VENTA", conexion);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id_venta", venta.idVenta);
+                cmd.Parameters.AddWithValue("@tipoProducto", venta.tipoProducto);
+                cmd.Parameters.AddWithValue("@Total", venta.Total);
+                cmd.Parameters.AddWithValue("@cantidadProducto", venta.cantidadProducto);
+                cmd.Parameters.AddWithValue("@fechaVenta", venta.fechaVenta);
+                
+                var i = cmd.ExecuteNonQuery();
+                
+
+                if (i >= 0)
+                {
+                    return $"se registro la venta exitosamente";
+                }
+                return "datos invalidos de la venta";
+
             }
-
-            SqlCommand cmd = new SqlCommand("SP_AGREGAR_VENTA", conexion);
-            cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@id_venta", venta.idVenta);
-            cmd.Parameters.AddWithValue("@tipoProducto", venta.tipoProducto);
-            cmd.Parameters.AddWithValue("@Total", venta.Total);
-            cmd.Parameters.AddWithValue("@cantidadProducto", venta.cantidadProducto);
-            cmd.Parameters.AddWithValue("@fechaVenta", venta.fechaVenta);
-            AbrirConexion();
-            var i = cmd.ExecuteNonQuery();
-            CerrarConexion();
-
-            if (i >= 0)
+            catch (SqlException ex)
             {
-                return $"se registro la venta exitosamente";
+                return "Error, id repetido: "+ex.Message;
             }
-
-            return "datos invalidos de la venta";
+            finally 
+            {
+                CerrarConexion();
+            }
+            
 
         }
 
